@@ -193,4 +193,9 @@ section p {
     color: #f6f6f6;
     text-align: center;
     font-weight: 500;
+
+}
+
+.test {
+    color: green;
 }
