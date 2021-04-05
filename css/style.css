@@ -1,0 +1,196 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #F6F6F6;   
+}
+
+header li, a, button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: auto;
+    color: #80647f;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 15px 10%;
+    position: fixed;
+}
+
+.logo {
+    cursor: pointer;
+    margin-right: auto;
+    width: 25%;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: #EF9AB4;
+}
+
+button {
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: #EF9AB4;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: #f6f6f6;
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+}
+
+button:hover {
+    background-color: #F6F6F6;
+    color: #80647f;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 120px;
+    width: 100%;
+}
+
+section h1 {
+    font-weight: 500;
+    font-size: 27px;
+    color: #80647f;
+    text-decoration: none;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+section p {
+    color: #80647f;
+    text-decoration: none;
+    font-family: "Beth Ellen";
+    text-align: center;
+    line-height: 3;
+    letter-spacing: 1px;
+    font-size: 13.5px;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    margin-right: 50px;
+}
+
+.banner h1{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+.banner h1, p, .socials{
+    margin-bottom: 10px;
+}
+
+.image img {
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+}
+
+.socials {
+    padding: 20px;
+    text-align: center;
+}
+
+.socials a {
+    padding: 5px 20px 5px 10px;
+    width: 100%;
+}
+
+.books {
+    padding: 120px 10%;
+    width: 100%;
+}
+
+.books h1{
+    color: #80647f;
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 25px;
+    font-weight: 550;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-family: "Montserrat";
+}
+
+.cards .book1 {
+    background: #B3A4DE;
+    width: 100%;
+    height: 300px;
+    max-width: 300px;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.book1 h2 {
+    background: none;
+    color: #f6f6f6;
+    text-align: center;
+    font-weight: 500;
+    padding: 70px;
+}
+
+.book1 h3 {
+    background: none;
+    color: #f6f6f6;
+    text-align: center;
+    font-weight: 500;
+}
+
+.cards .book2 {
+    background: #B3A4DE;
+    width: 100%;
+    height: 300px;
+    max-width: 300px;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.book2 h2 {
+    background: none;
+    color: #f6f6f6;
+    text-align: center;
+    font-weight: 500;
+    padding: 70px;
+}
+
+.book2 h3 {
+    background: none;
+    color: #f6f6f6;
+    text-align: center;
+    font-weight: 500;
+}
