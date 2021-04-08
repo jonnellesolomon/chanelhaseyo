@@ -2,13 +2,13 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #F6F6F6;   
+    background-color: #F6F6F6; 
 }
 
 header li, a, button {
     font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: auto;
+    font-weight: 600;
+    font-size: 16px;
     color: #80647f;
     text-decoration: none;
 }
@@ -46,7 +46,7 @@ header {
 
 button {
     margin-left: 20px;
-    padding: 9px 25px;
+    padding: 12px 25px;
     background-color: #EF9AB4;
     border: none;
     border-radius: 50px;
@@ -68,7 +68,6 @@ section {
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    padding-top: 120px;
     width: 100%;
     padding: 120px 10%;
 }
@@ -127,7 +126,6 @@ section p {
 
 .cards {
     padding: 15px 10%;
-    margin-top: 50px;
     font-family: "Montserrat";
     font-weight: 500;
     font-size: 13px;
@@ -138,19 +136,18 @@ section p {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center;
-    padding-top: 20px;
+    justify-content: space-between;
 }
 
 .card1, .card2, .card3 {
     padding: 60px;
-    margin: 20px;
+    margin-top: 40px;
     border-style: none;
     border-radius: 7px;
     text-align: center;
-    line-height: 1.5;
+    line-height: 1.3;
     width: 300px;
-    height: 350px;
+    height: 330px;
     font-size: 27px;
     font-family: "Montserrat";
     font-weight: 600;
@@ -206,4 +203,69 @@ section p {
 .card3:hover{
     transition: all 0.3s ease 0s;
     box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.3);
+}
+
+.youtube {
+    padding: 100px 10%;
+    font-size: 24px;
+    color: #80647f;
+    font-family: "Montserrat";
+    font-weight: 600;
+}
+
+.vid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.vid1, .vid2 {
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 40px;
+    border-style: none;
+    border-radius: 7px;
+    width: 520px;
+    height: 270px;
+    font-size: 27px;
+    font-weight: 600;
+    background-color: #EF9AB4;
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.1);
+}
+
+.vid i {
+    background-color: #EF9AB4;
+    color: #f6f6f6bd;
+    padding: 55px;
+    font-size: 100px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 10px;
+    font-family: "montserrat";
+    color: #80647f;
+    font-weight: 500;
+    border-top: 1.5px solid #80647f;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.social-footer {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.social-footer a{
+    padding-left: 20px;
+    text-align: center;
+    font-size: 15px;
 }
