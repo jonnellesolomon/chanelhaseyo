@@ -53,35 +53,38 @@ button {
     cursor: pointer;
     transition: all 0.3s ease 0s;
     color: #f6f6f6;
-    box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.1);
 }
 
 button:hover {
     background-color: #F6F6F6;
     color: #80647f;
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
 }
 
 section {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
     padding-top: 120px;
     width: 100%;
+    padding: 120px 10%;
 }
 
 section h1 {
     font-weight: 500;
     font-size: 27px;
     color: #80647f;
-    text-decoration: none;
     text-align: center;
     padding-bottom: 10px;
 }
 
 section p {
     color: #80647f;
+    background-color: #F6F6F6;
+    width: 100%;
     text-decoration: none;
     font-family: "Beth Ellen";
     text-align: center;
@@ -93,11 +96,8 @@ section p {
 .banner {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     width: 100%;
     max-width: 500px;
-    padding: 20px;
-    margin-right: 50px;
 }
 
 .banner h1{
@@ -125,77 +125,85 @@ section p {
     width: 100%;
 }
 
-.books {
-    padding: 120px 10%;
-    width: 100%;
-}
-
-.books h1{
-    color: #80647f;
+.cards {
+    padding: 15px 10%;
+    margin-top: 50px;
     font-family: "Montserrat";
     font-weight: 500;
-    font-size: 25px;
-    font-weight: 550;
+    font-size: 13px;
+    color: #80647f;
 }
 
-.cards {
+.love {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.card1, .card2, .card3 {
+    padding: 60px;
+    margin: 20px;
+    border-style: none;
+    border-radius: 7px;
+    text-align: center;
+    line-height: 1.5;
+    width: 300px;
+    height: 350px;
+    font-size: 27px;
     font-family: "Montserrat";
+    font-weight: 600;
 }
 
-.cards .book1 {
-    background: #B3A4DE;
-    width: 100%;
-    height: 300px;
-    max-width: 300px;
-    border-radius: 5px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+.card1{
+    background-color: #B3A4DE;
+    color: #F6F6F6;
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.1);
 }
 
-.book1 h2 {
-    background: none;
-    color: #f6f6f6;
-    text-align: center;
-    font-weight: 500;
-    padding: 70px;
+
+.card1 p {
+    background-color: #B3A4DE;
+    font-style: italic;
+    font-size: 16px;
 }
 
-.book1 h3 {
-    background: none;
-    color: #f6f6f6;
-    text-align: center;
-    font-weight: 500;
+.card1:hover{
+    transition: all 0.3s ease 0s;
+    box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.3);
 }
 
-.cards .book2 {
-    background: #B3A4DE;
-    width: 100%;
-    height: 300px;
-    max-width: 300px;
-    border-radius: 5px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+.card2{
+    background-color: #EF9AB4;
+    color: #F6F6F6;
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.1);
 }
 
-.book2 h2 {
-    background: none;
-    color: #f6f6f6;
-    text-align: center;
-    font-weight: 500;
-    padding: 70px;
+.card2 p {
+    background-color: #EF9AB4;
+    font-style: italic;
+    font-size: 16px;
 }
 
-.book2 h3 {
-    background: none;
-    color: #f6f6f6;
-    text-align: center;
-    font-weight: 500;
-
+.card2:hover{
+    transition: all 0.3s ease 0s;
+    box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.3);
 }
 
-.test {
-    color: green;
+.card3{
+    background-color: #f6f6f6;
+    color: #EF9AB4;
+    box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.1);
+}
+
+.card3 p {
+    background-color: #F6F6F6;
+    font-style: italic;
+    font-size: 16px;
+}
+
+.card3:hover{
+    transition: all 0.3s ease 0s;
+    box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.3);
 }
