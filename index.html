@@ -4,30 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-bem.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>chanelhaseyo</title>
 </head>
 <body>
-    <header>
-        <img class="logo" src="images/logo.png" alt="logo">
-        <nav>
-            <ul class="nav_links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Blogs</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Contacts</a></li>
-            </ul>
-        </nav>
-        <a href="#"><button>Subscribe</button></a>
+    <header class="navbar">
+        <img class="navbar__logo" src="images/logo.png" alt="logo">
+        <ul class="navbar__list navbar__list--active">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pages/blogs-def.html">Blogs</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contacts</a></li>
+            <li><button>Subscribe</button></li>
+        </ul>
     </header>
 
     <section>
         <div class="banner">
-
-            <h1>Quote of the day</h1>
-
-            <p>The Buddha said that suffering
+            <h1 class="banner__title">Quote of the day</h1>
+            <p class="banner__quote">
+                The Buddha said that suffering
                 was caused by desire,<br> we'd learned,
                 and that the cesation of desire meant<br> the 
                 cesation of suffering. When you
@@ -36,8 +33,7 @@
                 they did that. <br><br>
                 - Looking for Alaska, John Green
             </p>
-
-            <div class="socials">
+            <div class="banner__socials">
                 <a href="#"><i class="fa fa-facebook"></i></a>
                 <a href="#"><i class="fa fa-twitter"></i></a>
                 <a href="#"><i class="fa fa-instagram"></i></a>
@@ -49,26 +45,21 @@
             <img src="images/1.png" alt="photo1">
         </div>
     </section>
+    
     <div class="cards">
-        <h1>Recommended Books</h1>
-        <div class="love">
-            <a href="#">
-                <div class="card1">
-                    Looking <br> for <br> Alaska <br><br>
-                    <p>by <br> John Green</p>
-                </div>
+        <h1 class="cards__title">Recommended Books</h1>
+        <div class="cards__item">
+            <a class="cards__item--pink" href="#"> 
+                <h3> Looking <br> for <br> Alaska <br><br></h3>
+                <p> by <br> John Green</p>
             </a>
-            <a href="#">
-                <div class="card2">
-                    The <br> Little <br> Prince <br><br>
-                    <p>by <br> Antoine de Saint-Exupéry</p>
-                </div>
+            <a class="cards__item--purple" href="#">
+                <h3> The <br> Little <br> Prince <br><br> </h3>
+                <p>by <br> Antoine de Saint-Exupéry</p>
             </a>
-            <a href="#">
-                <div class="card3">
-                    <br> Stoner <br><br>
-                    <p>by <br> John Williams</p>
-                </div>
+            <a class="cards__item--white" href="#">
+                <h3><br> Stoner <br><br></h3>
+                <p>by <br> John Williams</p>
             </a>
         </div>
     </div>
@@ -87,10 +78,10 @@
         </div>
     </div>
 
-    <footer>
-        <p>chanelhaseyo</p>
-        <p>&copy 2021 chanelhaseyo | All Rights Reserved | Privacy Policy</p>
-        <div class="social-footer">
+    <footer class="footer">
+        <p class="footer__name">chanelhaseyo</p>
+        <p class="footer__copy">&copy 2021 chanelhaseyo | All Rights Reserved | Privacy Policy</p>
+        <div class="footer__socials">
             <a href="#"><i class="fa fa-facebook"></i></a>
             <a href="#"><i class="fa fa-twitter"></i></a>
             <a href="#"><i class="fa fa-instagram"></i></a>

@@ -1,0 +1,321 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #f6f6f6;
+}
+
+.navbar {
+  padding: 10px 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: fixed;
+}
+
+.navbar__logo {
+  cursor: pointer;
+  width: 25%;
+}
+
+.navbar__list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar__list a {
+  text-decoration: none;
+  color: #80647f;
+  font-family: "montserrat";
+  font-weight: bold;
+  padding: 0 18px;
+}
+
+.navbar__list a:hover {
+  color: #EF9AB4;
+}
+
+.navbar__list button {
+  padding: 10px 30px;
+  background: #EF9AB4;
+  color: #f6f6f6;
+  border-style: none;
+  border-radius: 20px;
+  font-family: "montserrat";
+  font-weight: bold;
+  font-size: 16px;
+  -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar__list button:hover {
+  background-color: #f6f6f6;
+  color: #80647f;
+  -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  padding: 120px 10%;
+}
+
+section img {
+  width: 100%;
+  max-width: 500px;
+  height: 100%;
+}
+
+.banner {
+  text-align: center;
+  color: #80647f;
+}
+
+.banner__title {
+  font-family: "montserrat";
+  font-size: 27px;
+  padding-bottom: 10px;
+}
+
+.banner__quote {
+  font-family: "Beth Ellen";
+  line-height: 3;
+  letter-spacing: 1px;
+  font-size: 13.5px;
+}
+
+.banner__socials {
+  padding: 40px;
+}
+
+.banner__socials a {
+  padding: 20px;
+  color: #80647f;
+}
+
+.banner__socials a:hover {
+  color: #EF9AB4;
+}
+
+.cards {
+  padding: 0 10%;
+}
+
+.cards__title {
+  color: #80647f;
+  font-family: "montserrat";
+  font-size: 25px;
+}
+
+.cards__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cards__item a {
+  padding: 60px;
+  margin-top: 40px;
+  border-style: none;
+  border-radius: 7px;
+  text-align: center;
+  line-height: 1.3;
+  width: 300px;
+  height: 330px;
+  font-family: "montserrat";
+  font-weight: 600;
+  text-decoration: none;
+  -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+.cards__item a:hover {
+  -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.cards__item--pink {
+  background-color: #EF9AB4;
+  color: #f6f6f6;
+}
+
+.cards__item--pink h3 {
+  background-color: #EF9AB4;
+  font-size: 25px;
+}
+
+.cards__item--pink p {
+  background-color: #EF9AB4;
+  font-style: italic;
+}
+
+.cards__item--purple {
+  background-color: #B3A4DE;
+  color: #f6f6f6;
+}
+
+.cards__item--purple h3 {
+  background-color: #B3A4DE;
+  font-size: 25px;
+}
+
+.cards__item--purple p {
+  background-color: #B3A4DE;
+  font-style: italic;
+}
+
+.cards__item--white {
+  background-color: #f6f6f6;
+  color: #EF9AB4;
+}
+
+.cards__item--white h3 {
+  background-color: #f6f6f6;
+  font-size: 25px;
+}
+
+.cards__item--white p {
+  background-color: #f6f6f6;
+  font-style: italic;
+}
+
+.youtube {
+  padding: 100px 10%;
+  font-size: 24px;
+  color: #80647f;
+  font-family: "montserrat";
+  font-weight: 600;
+}
+
+.vid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.vid i {
+  background-color: #EF9AB4;
+  color: #f6f6f6bd;
+  padding: 55px;
+  font-size: 100px;
+}
+
+.vid a {
+  text-decoration: none;
+  font-family: "montserrat";
+  font-size: 20px;
+  color: #80647f;
+}
+
+.vid a:hover {
+  color: #EF9AB4;
+}
+
+.vid1, .vid2 {
+  text-align: center;
+  padding-top: 30px;
+  margin-top: 40px;
+  border-style: none;
+  border-radius: 7px;
+  width: 520px;
+  height: 270px;
+  font-size: 27px;
+  font-weight: 600;
+  background-color: #EF9AB4;
+  -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 10px;
+  font-family: "montserrat";
+  color: #80647f;
+  border-top: 1.5px solid;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.footer__socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__socials a {
+  padding-left: 20px;
+  font-size: 15px;
+  color: #80647f;
+}
+
+.footer__socials a:hover {
+  color: #EF9AB4;
+}
+/*# sourceMappingURL=style-bem.css.map */

@@ -1,0 +1,273 @@
+$purple: #80647f;
+$white: #f6f6f6;
+$pink: #EF9AB4;
+$lilac: #B3A4DE;
+$shadow: 3px 3px 3px rgba(0,0,0,0.1);
+$shadow-hover: 3px 3px 3px rgba(0,0,0,0.3);
+$mon: "montserrat";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: $white; 
+}
+
+.navbar {
+    padding: 10px 10%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    
+    &__logo {
+        cursor: pointer;
+        width: 25%;
+    }
+
+    &__list {
+        list-style: none;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        
+       a {
+            text-decoration: none;
+            color: $purple;
+            font-family: $mon;
+            font-weight: bold;
+            padding: 0 18px;
+        }
+
+        a:hover {
+            color: $pink;
+        }
+
+        button {
+            padding: 10px 30px;
+            background: $pink;
+            color: $white;
+            border-style: none;
+            border-radius: 20px;
+            font-family: $mon;
+            font-weight: bold;
+            font-size: 16px;
+            box-shadow: $shadow;
+        }
+
+        button:hover {
+            background-color: $white;
+            color: $purple;
+            box-shadow: $shadow-hover;
+            cursor: pointer;
+        }
+    }
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 120px 10%;
+
+    img {
+        width: 100%;
+        max-width: 500px;
+        height: 100%;
+    }
+}
+
+.banner {
+    text-align: center;
+    color: $purple;
+
+    &__title {
+        font-family: $mon;
+        font-size: 27px;
+        padding-bottom: 10px;
+    }
+
+    &__quote {
+        font-family: "Beth Ellen";
+        line-height: 3;
+        letter-spacing: 1px;
+        font-size: 13.5px;
+    }
+
+    &__socials {
+        padding: 40px;
+
+        a {
+            padding: 20px;
+            color: $purple;
+        }
+
+        a:hover {
+            color: $pink;
+        }
+    }
+}
+
+.cards {
+    padding: 0 10%;
+
+    &__title {
+        color: $purple;
+        font-family: $mon;
+        font-size: 25px;
+    }
+
+    &__item {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+
+        a {
+            padding: 60px;
+            margin-top: 40px;
+            border-style: none;
+            border-radius: 7px;
+            text-align: center;
+            line-height: 1.3;
+            width: 300px;
+            height: 330px;
+            font-family: $mon;
+            font-weight: 600;
+            text-decoration: none;
+            box-shadow: $shadow;
+        }
+
+        a:hover {
+            box-shadow: $shadow-hover;
+        }
+
+        &--pink {
+            background-color: $pink;
+            color: $white;
+
+
+            h3 {
+                background-color: $pink;
+                font-size: 25px;
+            }
+
+            p {
+                background-color: $pink;
+                font-style: italic;
+            }
+        }
+
+        &--purple {
+            background-color: $lilac;
+            color: $white;
+
+            h3 {
+                background-color: $lilac;
+                font-size: 25px;
+            }
+
+            p {
+                background-color: $lilac;
+                font-style: italic;
+            }
+        }
+            &--white {
+                background-color: $white;
+                color: $pink;
+    
+                h3 {
+                    background-color: $white;
+                    font-size: 25px;
+                }
+    
+                p {
+                    background-color: $white;
+                    font-style: italic;
+                }
+            }
+        }
+}
+
+.youtube {
+    padding: 100px 10%;
+    font-size: 24px;
+    color: $purple;
+    font-family: $mon;
+    font-weight: 600;
+}
+
+.vid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+
+    i {
+        background-color: $pink;
+        color: #f6f6f6bd;
+        padding: 55px;
+        font-size: 100px;
+    }
+
+    a {
+        text-decoration: none;
+        font-family: $mon;
+        font-size: 20px;
+        color: $purple;
+    }
+
+    a:hover {
+        color: $pink;
+    }
+}
+
+.vid1, .vid2 {
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 40px;
+    border-style: none;
+    border-radius: 7px;
+    width: 520px;
+    height: 270px;
+    font-size: 27px;
+    font-weight: 600;
+    background-color: $pink;
+    box-shadow: $shadow
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 10px;
+    font-family: $mon;
+    color: $purple;
+    border-top: 1.5px solid;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 100px;
+    text-align: center;
+
+    &__socials {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        
+        a {
+            padding-left: 20px;
+            font-size: 15px;
+            color: $purple;
+        }
+
+        a:hover {
+            color: $pink;
+        }
+    }
+}
+
