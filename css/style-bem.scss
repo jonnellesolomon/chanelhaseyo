@@ -18,13 +18,19 @@ $mon: "montserrat";
     display: flex;
     justify-content: space-between;
     position: fixed;
-    
+    z-index: 1;
+
+    .hamIcon {
+        font-size: 25px;
+    }
+
     &__logo {
         cursor: pointer;
         width: 25%;
     }
 
     &__list {
+        display: none;
         list-style: none;
         display: flex;
         flex-wrap: nowrap;
@@ -62,6 +68,24 @@ $mon: "montserrat";
         }
     }
 }
+@media(min-width: 769px) {
+    .hamIcon {
+        display: none;
+    }
+}
+
+@media(max-width: 768px) {
+    .navbar {
+        &__list {
+            display: none;
+        }
+    }
+
+    .navbar__list.toggleCls {
+        display: block;
+    }
+}
+
 
 section {
     display: flex;
