@@ -1,5 +1,14 @@
-function toggleClass() {
+let hamburger = document.querySelector(".hamIcon");
+let menu = document.querySelector("#openMenu");
+let close = document.querySelector(".closeMenu");
 
-    let menu = document.querySelector(".openMenu");
-    menu.classList.toggle(toggleCls);
-}
+hamburger.addEventListener("click", 
+    function displayMenu() {
+        menu.style.display = "block";
+});
+
+close.addEventListener("click", 
+    function closeMenu() {
+        menu.style.display = "none";
+});
+

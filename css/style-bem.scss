@@ -20,8 +20,66 @@ $mon: "montserrat";
     position: fixed;
     z-index: 1;
 
+    .openMenu {
+            display: none;
+            opacity: 0.8;
+            background-color: $white;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0px;
+            left: 0px;
+            z-index: 1000;
+
+            &__list {
+                background-color: $white;
+                list-style: none;
+                padding-top: 50px;
+                padding-left: 100px;
+
+                li {
+                    padding: 20px;
+                }
+
+                a {
+                    background-color: $white;
+                    text-decoration: none;
+                    color: $purple;
+                    font-family: $mon;
+                    font-weight: bold;
+                }
+
+                a:hover {
+                    color: $pink;
+                }
+
+                .closeMenu {
+                    border-style: none;
+                    color: $purple;
+                    font-size: 25px;
+                    outline: none;
+                }
+
+                .closeMenu:hover {
+                    outline: none;
+                    color: $pink;
+                }
+            }
+        }
+
     .hamIcon {
-        font-size: 25px;
+        border-style: none;
+        font-size: 20px;
+        color: $purple;
+        outline: none;
+        @media screen and (min-width: 769px) {
+            display: none;
+        }
+    }
+
+    .hamIcon:hover {
+        color: $pink;
+        outline: none;
     }
 
     &__logo {
@@ -30,11 +88,13 @@ $mon: "montserrat";
     }
 
     &__list {
-        display: none;
         list-style: none;
         display: flex;
         flex-wrap: nowrap;
         align-items: center;
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
         
        a {
             text-decoration: none;
@@ -47,45 +107,44 @@ $mon: "montserrat";
         a:hover {
             color: $pink;
         }
+    }
+    .button {
+        padding: 10px 30px;
+        background: $pink;
+        color: $white;
+        border-style: none;
+        border-radius: 20px;
+        font-family: $mon;
+        font-weight: bold;
+        font-size: 16px;
+        box-shadow: $shadow;
+        outline: none;
+    }
 
-        button {
-            padding: 10px 30px;
-            background: $pink;
-            color: $white;
-            border-style: none;
-            border-radius: 20px;
-            font-family: $mon;
-            font-weight: bold;
-            font-size: 16px;
-            box-shadow: $shadow;
-        }
-
-        button:hover {
-            background-color: $white;
-            color: $purple;
-            box-shadow: $shadow-hover;
-            cursor: pointer;
-        }
+    .button:hover {
+        background-color: $white;
+        color: $purple;
+        box-shadow: $shadow-hover;
+        cursor: pointer;  
     }
 }
-@media(min-width: 769px) {
-    .hamIcon {
-        display: none;
-    }
-}
+// @media(min-width: 769px) {
+//     .hamIcon {
+//         display: none;
+//     }
+    
+//     .openMenu {
+//         display: none;
+//     }
+// }
 
-@media(max-width: 768px) {
-    .navbar {
-        &__list {
-            display: none;
-        }
-    }
-
-    .navbar__list.toggleCls {
-        display: block;
-    }
-}
-
+// @media(max-width: 768px) {
+//     .navbar {
+//         &__list {
+//             display: none;
+//         }
+//     }
+// }
 
 section {
     display: flex;

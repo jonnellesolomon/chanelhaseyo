@@ -18,8 +18,69 @@
   z-index: 1;
 }
 
-.navbar .hamIcon {
+.navbar .openMenu {
+  display: none;
+  opacity: 0.8;
+  background-color: #f6f6f6;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
+}
+
+.navbar .openMenu__list {
+  background-color: #f6f6f6;
+  list-style: none;
+  padding-top: 50px;
+  padding-left: 100px;
+}
+
+.navbar .openMenu__list li {
+  padding: 20px;
+}
+
+.navbar .openMenu__list a {
+  background-color: #f6f6f6;
+  text-decoration: none;
+  color: #80647f;
+  font-family: "montserrat";
+  font-weight: bold;
+}
+
+.navbar .openMenu__list a:hover {
+  color: #EF9AB4;
+}
+
+.navbar .openMenu__list .closeMenu {
+  border-style: none;
+  color: #80647f;
   font-size: 25px;
+  outline: none;
+}
+
+.navbar .openMenu__list .closeMenu:hover {
+  outline: none;
+  color: #EF9AB4;
+}
+
+.navbar .hamIcon {
+  border-style: none;
+  font-size: 20px;
+  color: #80647f;
+  outline: none;
+}
+
+@media screen and (min-width: 769px) {
+  .navbar .hamIcon {
+    display: none;
+  }
+}
+
+.navbar .hamIcon:hover {
+  color: #EF9AB4;
+  outline: none;
 }
 
 .navbar__logo {
@@ -28,7 +89,6 @@
 }
 
 .navbar__list {
-  display: none;
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -38,6 +98,12 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar__list {
+    display: none;
+  }
 }
 
 .navbar__list a {
@@ -52,7 +118,7 @@
   color: #EF9AB4;
 }
 
-.navbar__list button {
+.navbar .button {
   padding: 10px 30px;
   background: #EF9AB4;
   color: #f6f6f6;
@@ -63,29 +129,15 @@
   font-size: 16px;
   -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
           box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+  outline: none;
 }
 
-.navbar__list button:hover {
+.navbar .button:hover {
   background-color: #f6f6f6;
   color: #80647f;
   -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
           box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
   cursor: pointer;
-}
-
-@media (min-width: 769px) {
-  .hamIcon {
-    display: none;
-  }
-}
-
-@media (max-width: 768px) {
-  .navbar__list {
-    display: none;
-  }
-  .navbar__list.toggleCls {
-    display: block;
-  }
 }
 
 section {
