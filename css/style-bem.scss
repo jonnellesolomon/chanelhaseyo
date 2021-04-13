@@ -181,6 +181,9 @@ section {
 
     &__socials {
         padding: 40px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
 
         a {
             padding: 20px;
