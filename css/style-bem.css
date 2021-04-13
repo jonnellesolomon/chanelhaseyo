@@ -460,24 +460,66 @@ section img {
   margin-bottom: 40px;
 }
 
-.y2k__content {
-  padding-left: 50px;
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 120px 10%;
+  text-align: center;
 }
 
-.y2k__content--title {
+.gallery__banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+}
+
+.gallery__banner img {
+  width: 50%;
+}
+
+.gallery__slc {
+  padding-top: 100px;
+}
+
+.gallery__slc img {
+  width: 33%;
+}
+
+.room {
+  padding: 120px 10%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.room__title {
   font-family: "montserrat";
   color: #80647f;
   font-size: 20px;
+  padding-bottom: 30px;
 }
 
-.y2k__content--para {
-  font-family: "montserrat";
-  color: #80647f;
-  line-height: 1.5;
-  margin-top: 10px;
-  width: 100%;
-  font-size: 15px;
-  text-align: justify;
+.room img {
+  width: 19.6%;
 }
 
 .footer {
