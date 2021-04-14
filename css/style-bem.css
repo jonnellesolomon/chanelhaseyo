@@ -522,6 +522,69 @@ section img {
   width: 19.6%;
 }
 
+.contact {
+  padding: 150px 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact__info {
+  text-align: center;
+  font-family: "montserrat";
+  font-size: 12px;
+}
+
+.contact__info--title {
+  color: #EF9AB4;
+}
+
+.contact__info--info {
+  color: #80647f;
+}
+
+.contact__info--socials {
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contact__info--socials a {
+  padding: 20px;
+  color: #80647f;
+  font-size: 20px;
+}
+
+.contact__info--socials a:hover {
+  color: #EF9AB4;
+}
+
+.contact__logo {
+  width: 50%;
+  min-width: 400px;
+  padding: 100px;
+}
+
+@media screen and (min-width: 768px) {
+  .contact__logo {
+    border-left: 1px #80647f solid;
+  }
+}
+
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;

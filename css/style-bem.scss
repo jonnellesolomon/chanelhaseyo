@@ -452,6 +452,54 @@ section {
     }
 }
 
+.contact {
+    padding: 150px 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    &__info {
+        text-align: center;
+        font-family: $mon;
+        font-size: 12px;
+
+        &--title {
+            color: $pink;
+        }
+
+        &--info {
+            color: $purple;
+        }
+
+        &--socials {
+            padding: 50px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+    
+            a {
+                padding: 20px;
+                color: $purple;
+                font-size: 20px;
+            }
+    
+            a:hover {
+                color: $pink;
+            }
+        }
+    }
+
+    &__logo {
+            width: 50%;
+            min-width: 400px;
+            padding: 100px;
+            @media screen and (min-width: 768px) {
+                border-left: 1px $purple solid;
+            }
+    }
+}
+
 .footer {
     display: flex;
     flex-direction: row;
