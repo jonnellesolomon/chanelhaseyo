@@ -294,37 +294,42 @@ section {
     flex-direction: row;
     justify-content: space-between;
 
-    i {
-        background-color: $pink;
-        color: #f6f6f6bd;
-        padding: 55px;
-        font-size: 100px;
+    iframe {
+        width: 500px;
+        height: 300px;
+        margin: 50px 0%;
     }
+//     i {
+//         background-color: $pink;
+//         color: #f6f6f6bd;
+//         padding: 55px;
+//         font-size: 100px;
+//     }
 
-    a {
-        text-decoration: none;
-        font-family: $mon;
-        font-size: 20px;
-        color: $purple;
-    }
+    // a {
+    //     text-decoration: none;
+    //     font-family: $mon;
+    //     font-size: 20px;
+    //     color: $purple;
+    // }
 
-    a:hover {
-        color: $pink;
-    }
-}
+    // a:hover {
+    //     color: $pink;
+    // }
+// }
 
-.vid1, .vid2 {
-    text-align: center;
-    padding-top: 30px;
-    margin-top: 40px;
-    border-style: none;
-    border-radius: 7px;
-    width: 520px;
-    height: 270px;
-    font-size: 27px;
-    font-weight: 600;
-    background-color: $pink;
-    box-shadow: $shadow
+// .vid1, .vid2 {
+//     text-align: center;
+//     padding-top: 30px;
+//     margin-top: 40px;
+//     border-style: none;
+//     border-radius: 7px;
+//     width: 520px;
+//     height: 270px;
+//     font-size: 27px;
+//     font-weight: 600;
+//     background-color: $pink;
+//     box-shadow: $shadow
 }
 
 .blogs {

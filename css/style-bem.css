@@ -327,37 +327,10 @@ section img {
           justify-content: space-between;
 }
 
-.vid i {
-  background-color: #EF9AB4;
-  color: #f6f6f6bd;
-  padding: 55px;
-  font-size: 100px;
-}
-
-.vid a {
-  text-decoration: none;
-  font-family: "montserrat";
-  font-size: 20px;
-  color: #80647f;
-}
-
-.vid a:hover {
-  color: #EF9AB4;
-}
-
-.vid1, .vid2 {
-  text-align: center;
-  padding-top: 30px;
-  margin-top: 40px;
-  border-style: none;
-  border-radius: 7px;
-  width: 520px;
-  height: 270px;
-  font-size: 27px;
-  font-weight: 600;
-  background-color: #EF9AB4;
-  -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
-          box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+.vid iframe {
+  width: 500px;
+  height: 300px;
+  margin: 50px 0%;
 }
 
 .blogs {
